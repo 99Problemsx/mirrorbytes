@@ -328,6 +328,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.5 });
 
     progressBars.forEach(bar => progressObserver.observe(bar));
+
+    // Circle progress animation
+    const circleProgress = document.querySelector('.circle-progress');
+    if (circleProgress) {
+        const progressValue = parseInt(circleProgress.getAttribute('data-progress'));
+        const progressCircle = circleProgress.parentElement;
+        if (progressCircle && progressValue) {
+            progressCircle.style.background = `conic-gradient(var(--primary-color) ${progressValue}%, var(--darker-bg) ${progressValue}%)`;
+        }
+    }
 });
 
 // Parallax Effects
