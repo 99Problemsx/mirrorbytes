@@ -1308,85 +1308,7 @@ body {
     opacity: 0.7;
 }
 
-/* Screenshots Section */
-.screenshots {
-    padding: 8rem 0;
-    background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
-}
-
-.media-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 4rem;
-}
-
-.media-item {
-    background: var(--card-bg);
-    border-radius: 15px;
-    padding: 1.5rem;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 107, 107, 0.2);
-    transition: all 0.3s ease;
-}
-
-.media-item:hover {
-    transform: translateY(-10px);
-    border-color: var(--primary-color);
-    box-shadow: 0 20px 40px rgba(255, 107, 107, 0.2);
-}
-
-.media-item.featured {
-    grid-column: span 2;
-}
-
-.media-placeholder {
-    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--darker-bg) 100%);
-    border-radius: 10px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    border: 2px dashed rgba(255, 107, 107, 0.3);
-}
-
-.placeholder-content {
-    text-align: center;
-    color: var(--gray-text);
-}
-
-.placeholder-content i {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.media-info h4 {
-    color: var(--light-text);
-    margin-bottom: 0.5rem;
-}
-
-.media-info p {
-    color: var(--gray-text);
-    font-size: 0.9rem;
-}
-
-.media-note {
-    text-align: center;
-    margin-top: 3rem;
-    padding: 1rem;
-    background: rgba(255, 107, 107, 0.1);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 107, 107, 0.2);
-}
-
-.media-note i {
-    color: var(--primary-color);
-    margin-right: 0.5rem;
-}
-
-/* Progress Section */
+/* Development Progress Section */
 .progress-section {
     padding: 8rem 0;
     background: var(--dark-bg);
@@ -1418,7 +1340,7 @@ body {
     margin: 0 auto 2rem;
     position: relative;
     border-radius: 50%;
-    background: conic-gradient(var(--primary-color) 45%, var(--darker-bg) 45%);
+    background: conic-gradient(var(--primary-color) 80%, var(--darker-bg) 80%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1623,10 +1545,6 @@ body {
 
 /* Responsive Design for New Sections */
 @media (max-width: 768px) {
-    .media-item.featured {
-        grid-column: span 1;
-    }
-    
     .progress-content {
         grid-template-columns: 1fr;
         gap: 2rem;
