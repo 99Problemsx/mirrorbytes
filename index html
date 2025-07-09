@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirrorbyte Studio - Pokemon Fangame Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="pokeball-loader">
+            <div class="pokeball">
+                <div class="pokeball-top"></div>
+                <div class="pokeball-bottom"></div>
+                <div class="pokeball-center"></div>
+                <div class="pokeball-button"></div>
+            </div>
+        </div>
+        <div class="loading-text">Lade Pokemon Welt...</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-pokeball">⚡</div>
+                <span>Mirrorbyte Studio</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#fangames" class="nav-link">Fangame</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#progress" class="nav-link">Fortschritt</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#discord" class="nav-link">Community</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="pokemon-silhouettes">
+                <div class="pokemon-shadow pokemon-1">🔥</div>
+                <div class="pokemon-shadow pokemon-2">💧</div>
+                <div class="pokemon-shadow pokemon-3">🌿</div>
+                <div class="pokemon-shadow pokemon-4">⚡</div>
+                <div class="pokemon-shadow pokemon-5">🌙</div>
+                <div class="pokemon-shadow pokemon-6">✨</div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-main">
+                <div class="hero-badge">
+                    <span>🎮 POKEMON FANGAME STUDIO</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">MIRRORBYTE</span>
+                    <span class="title-line gradient-text">STUDIO</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Wir erschaffen epische Pokemon Fangames mit düsteren Geschichten, moralischen Entscheidungen 
+                    und innovativen Features. Tauche ein in Welten voller Gefahren, wo deine Entscheidungen 
+                    über Leben und Tod bestimmen!
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">1</span>
+                        <span class="stat-label">Fangame</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Beta</span>
+                        <span class="stat-label">Status</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#fangames" class="btn btn-primary">
+                        <i class="fas fa-gamepad"></i>
+                        Unsere Fangames
+                    </a>
+                    <a href="#discord" class="btn btn-discord">
+                        <i class="fab fa-discord"></i>
+                        Discord Community
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="pokeball-scroll">
+                <div class="pokeball-mini">
+                    <div class="pokeball-mini-top"></div>
+                    <div class="pokeball-mini-bottom"></div>
+                </div>
+            </div>
+            <span>Scroll für mehr</span>
+        </div>
+    </section>
+
+    <!-- Featured Fangame Showcase -->
+    <section class="featured-showcase">
+        <div class="showcase-container">
+            <div class="featured-content">
+                <div class="featured-text">
+                    <div class="section-badge">✨ FEATURED PROJEKT</div>
+                    <h2>Pokemon Shadows of Legacy</h2>
+                    <p>
+                        Unser aktuelles Projekt! Ein tödliches Virus bedroht Menschen und Pokemon gleichermaßen. 
+                        Böse Organisationen wollen es für ihre Zwecke nutzen. Du entscheidest: Schließt du dich 
+                        ihnen an oder bekämpfst du sie? Mit allen Pokemon der Gen 1-9, Dynamax, Mega-Entwicklung, 
+                        einem neuen Sound-Typ und vielen Quality of Life Features wird dies das ultimative Pokemon-Erlebnis!
+                    </p>
+                    <div class="featured-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-skull"></i>
+                            <span>Tödliches Virus</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-balance-scale"></i>
+                            <span>Moralische Entscheidungen</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-crossroads"></i>
+                            <span>Gut vs. Böse</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-desktop"></i>
+                            <span>Custom Battle UI</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                            <span>Dynamax System</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-star"></i>
+                            <span>Mega Entwicklung</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-list"></i>
+                            <span>Alle Pokemon Gen 1-9</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-level-up-alt"></i>
+                            <span>Level Cap System</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Nuzlocke/Challenge System</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-play"></i>
+                            <span>Animierte Pokemon Gen 5 Stil</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-walking"></i>
+                            <span>Folgende Pokemon</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-clock"></i>
+                            <span>Custom Ingame-Uhr</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-cloud-rain"></i>
+                            <span>Wetter System</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-tasks"></i>
+                            <span>Quest System</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-volume-up"></i>
+                            <span>Sound-Typ (Neu!)</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-magic"></i>
+                            <span>Quality of Life Features</span>
+                        </div>
+                    </div>
+                    <div class="featured-buttons">
+                        <a href="#" class="btn btn-secondary">Bald verfügbar</a>
+                        <a href="#discord" class="btn btn-discord">Discord Community</a>
+                    </div>
+                </div>
+                <div class="featured-visual">
+                    <div class="game-mockup">
+                        <div class="mockup-screen">
+                            <div class="pokemon-battle-scene">
+                                <div class="battle-pokemon player">🔥</div>
+                                <div class="battle-vs">VS</div>
+                                <div class="battle-pokemon enemy">💧</div>
+                                <div class="battle-effects">
+                                    <div class="effect-1">✨</div>
+                                    <div class="effect-2">⚡</div>
+                                    <div class="effect-3">💫</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mockup-reflection"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fangames Grid -->
+    <section id="fangames" class="fangames">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Unser Pokemon Fangame</h2>
+                <p class="section-subtitle">Entdecke ein episches Pokemon Abenteuer in einer neuen Welt</p>
+            </div>
+            
+            <div class="fangames-grid">
+                <div class="fangame-card spotlight">
+                    <div class="card-header">
+                        <div class="status-badge in-development">In Entwicklung</div>
+                        <div class="card-type">FANGAME</div>
+                    </div>
+                    <div class="card-visual">
+                        <div class="pokemon-icon legendary">🌑</div>
+                        <div class="energy-rings">
+                            <div class="ring ring-1"></div>
+                            <div class="ring ring-2"></div>
+                            <div class="ring ring-3"></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pokemon Shadows of Legacy</h3>
+                        <p>Ein tödliches Virus bedroht die Welt. Böse Organisationen kämpfen um die Kontrolle. Du entscheidest über Leben und Tod</p>
+                        <div class="card-features">
+                            <span class="feature">Virus-Storyline</span>
+                            <span class="feature">Gen 1-9 Pokemon</span>
+                            <span class="feature">Dynamax & Mega</span>
+                            <span class="feature">Sound-Typ</span>
+                            <span class="feature">Folgende Pokemon</span>
+                            <span class="feature">Custom Battle UI</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                            <span class="progress-text">45% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots/Media Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Screenshots & Media</h2>
+                <p class="section-subtitle">Erste Einblicke in Pokemon Shadows of Legacy</p>
+            </div>
+            
+            <div class="media-grid">
+                <div class="media-item featured">
+                    <div class="media-placeholder">
+                        <div class="placeholder-content">
+                            <i class="fas fa-gamepad"></i>
+                            <h3>Gameplay Screenshot</h3>
+                            <p>Bald verfügbar</p>
+                        </div>
+                    </div>
+                    <div class="media-info">
+                        <h4>Ingame Battle System</h4>
+                        <p>Unser custom Battle UI in Aktion</p>
+                    </div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-placeholder">
+                        <div class="placeholder-content">
+                            <i class="fas fa-map"></i>
+                            <h3>World Map</h3>
+                            <p>Bald verfügbar</p>
+                        </div>
+                    </div>
+                    <div class="media-info">
+                        <h4>Overworld</h4>
+                        <p>Erkunde die gefährliche Welt</p>
+                    </div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-placeholder">
+                        <div class="placeholder-content">
+                            <i class="fas fa-users"></i>
+                            <h3>Characters</h3>
+                            <p>Bald verfügbar</p>
+                        </div>
+                    </div>
+                    <div class="media-info">
+                        <h4>Charaktere</h4>
+                        <p>Verbündete oder Feinde?</p>
+                    </div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-placeholder">
+                        <div class="placeholder-content">
+                            <i class="fas fa-cog"></i>
+                            <h3>Features</h3>
+                            <p>Bald verfügbar</p>
+                        </div>
+                    </div>
+                    <div class="media-info">
+                        <h4>Quality of Life</h4>
+                        <p>Moderne Features im Einsatz</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="media-note">
+                <p><i class="fas fa-info-circle"></i> Screenshots und Videos werden regelmäßig auf unserem Discord-Server geteilt!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Progress Section -->
+    <section id="progress" class="progress-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entwicklungsfortschritt</h2>
+                <p class="section-subtitle">Transparente Einblicke in unsere Arbeit</p>
+            </div>
+            
+            <div class="progress-content">
+                <div class="progress-overview">
+                    <div class="overall-progress">
+                        <div class="progress-circle">
+                            <div class="circle-progress" data-progress="45">
+                                <div class="progress-number">45%</div>
+                                <div class="progress-label">Gesamt</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-details">
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-name">Story & Dialoge</span>
+                                <span class="progress-percent">60%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-name">Battle System</span>
+                                <span class="progress-percent">70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-name">Pokemon Integration</span>
+                                <span class="progress-percent">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-name">Maps & Welten</span>
+                                <span class="progress-percent">30%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-name">Sound & Musik</span>
+                                <span class="progress-percent">25%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span class="progress-name">Testing & Balancing</span>
+                                <span class="progress-percent">10%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 10%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="roadmap">
+                    <h3>Roadmap</h3>
+                    <div class="timeline">
+                        <div class="timeline-item completed">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Alpha Version</h4>
+                                <p>Grundlegende Mechaniken implementiert</p>
+                                <span class="timeline-date">Abgeschlossen</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item current">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Beta Version</h4>
+                                <p>Story-Integration und erweiterte Features</p>
+                                <span class="timeline-date">In Arbeit</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Release Candidate</h4>
+                                <p>Vollständige Story und Balancing</p>
+                                <span class="timeline-date">Q2 2024</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Final Release</h4>
+                                <p>Vollständiges Spiel mit allen Features</p>
+                                <span class="timeline-date">Q3 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio Section -->
+    <section id="about" class="studio">
+        <div class="container">
+            <div class="studio-content">
+                <div class="studio-text">
+                    <div class="section-badge">🎮 ÜBER UNS</div>
+                    <h2 class="section-title">Mirrorbyte Studio</h2>
+                    <p class="studio-description">
+                        Wir sind ein leidenschaftliches Team von Pokemon-Fans und Entwicklern, die es sich zur 
+                        Aufgabe gemacht haben, einzigartige Pokemon Fangames zu erschaffen. Unsere Mission ist es, 
+                        die Pokemon-Community mit innovativen Geschichten, originalen Pokemon und unvergesslichen 
+                        Abenteuern zu begeistern.
+                    </p>
+                    
+                    <div class="studio-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">🎯</div>
+                            <div class="stat-info">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Jahre Erfahrung</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🎮</div>
+                            <div class="stat-info">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Aktuelles Projekt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="studio-visual">
+                    <div class="development-showcase">
+                        <div class="dev-screen">
+                            <div class="screen-header">
+                                <span class="screen-title">Fangame Development</span>
+                                <div class="screen-controls">
+                                    <div class="control"></div>
+                                    <div class="control"></div>
+                                    <div class="control"></div>
+                                </div>
+                            </div>
+                            <div class="screen-content">
+                                <div class="code-lines">
+                                    <div class="code-line"># Creating virus system...</div>
+                                    <div class="code-line">virus.spread_rate = 0.75</div>
+                                    <div class="code-line">player.moral_choice = "undecided"</div>
+                                    <div class="code-line">organization.recruit(player)</div>
+                                    <div class="code-line"># Your choice shapes the world!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dev-tools">
+                            <div class="tool">
+                                <i class="fas fa-code"></i>
+                                <span>RPG Maker</span>
+                            </div>
+                            <div class="tool">
+                                <i class="fas fa-image"></i>
+                                <span>Sprite Design</span>
+                            </div>
+                            <div class="tool">
+                                <i class="fas fa-map"></i>
+                                <span>Map Creation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Häufig gestellte Fragen</h2>
+                <p class="section-subtitle">Alles was du über Pokemon Shadows of Legacy wissen musst</p>
+            </div>
+            
+            <div class="faq-content">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Wann wird Pokemon Shadows of Legacy veröffentlicht?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Wir planen die Veröffentlichung für Q3 2024. Aktuell befinden wir uns in der Beta-Phase und arbeiten intensiv an der Story-Integration und dem Balancing.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Wird das Spiel kostenlos sein?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ja! Pokemon Shadows of Legacy wird komplett kostenlos sein. Wir entwickeln das Spiel aus Leidenschaft für die Pokemon-Community.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Auf welchen Plattformen wird das Spiel verfügbar sein?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Das Spiel wird für Windows PC verfügbar sein. Wir prüfen auch die Möglichkeit einer Mac-Version, können aber noch nichts versprechen.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Wie kann ich Beta-Tester werden?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tritt unserem Discord-Server bei! Dort werden regelmäßig Beta-Versionen geteilt und du kannst dich für das Testing-Programm anmelden.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Welche Systemanforderungen hat das Spiel?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Minimum:</strong> Windows 10, 4GB RAM, 2GB freier Speicherplatz<br>
+                        <strong>Empfohlen:</strong> Windows 11, 8GB RAM, 4GB freier Speicherplatz</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Kann ich das Spiel auf Deutsch spielen?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ja! Das Spiel wird vollständig auf Deutsch verfügbar sein. Wir arbeiten auch an einer englischen Version.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Gibt es Online-Features oder Multiplayer?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pokemon Shadows of Legacy ist ein Singleplayer-Erlebnis. Wir konzentrieren uns auf eine tiefgreifende Story und ein ausgewogenes Gameplay.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Wie lange wird das Spiel sein?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Wir planen eine Spielzeit von 15-20 Stunden für die Hauptstory, mit zusätzlichen Inhalten und Sidequests für weitere 10+ Stunden.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord Community Section -->
+    <section id="discord" class="discord-section">
+        <div class="container">
+            <div class="discord-content">
+                <div class="discord-header">
+                    <div class="discord-logo">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h2>Tritt unserer Community bei!</h2>
+                    <p>Verbinde dich mit anderen Trainern, erhalte exklusive Beta-Zugriffe und diskutiere über Pokemon Fangames</p>
+                </div>
+                
+                <div class="discord-features">
+                    <div class="discord-feature">
+                        <div class="feature-icon">🎮</div>
+                        <h3>Beta-Zugang</h3>
+                        <p>Erhalte frühzeitigen Zugang zu unseren neuesten Fangames und Features</p>
+                    </div>
+                    <div class="discord-feature">
+                        <div class="feature-icon">💬</div>
+                        <h3>Direkter Support</h3>
+                        <p>Chatte direkt mit den Entwicklern und erhalte Hilfe bei Problemen</p>
+                    </div>
+                    <div class="discord-feature">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Events & Contests</h3>
+                        <p>Nimm an exklusiven Community-Events und Pokemon-Contests teil</p>
+                    </div>
+                    <div class="discord-feature">
+                        <div class="feature-icon">📢</div>
+                        <h3>News & Updates</h3>
+                        <p>Bleibe immer auf dem neuesten Stand über unsere Projekte</p>
+                    </div>
+                </div>
+                
+                <div class="discord-widget">
+                    <div class="widget-header">
+                        <i class="fab fa-discord"></i>
+                        <span>Mirrorbyte Studio Community</span>
+                        <div class="online-indicator">
+                            <div class="online-dot"></div>
+                            <span>5 online</span>
+                        </div>
+                    </div>
+                    <div class="widget-channels">
+                        <div class="channel">
+                            <i class="fas fa-hashtag"></i>
+                            <span>allgemein</span>
+                            <div class="channel-activity">42 Nachrichten</div>
+                        </div>
+                        <div class="channel">
+                            <i class="fas fa-hashtag"></i>
+                            <span>fangame-diskussion</span>
+                            <div class="channel-activity">18 Nachrichten</div>
+                        </div>
+                        <div class="channel">
+                            <i class="fas fa-hashtag"></i>
+                            <span>beta-testing</span>
+                            <div class="channel-activity">7 Nachrichten</div>
+                        </div>
+                    </div>
+                    <a href="https://discord.gg/TRn34MkT" class="discord-join-btn">
+                        <i class="fab fa-discord"></i>
+                        Discord Server beitreten
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <div class="logo-pokeball">⚡</div>
+                        <span>Mirrorbyte Studio</span>
+                    </div>
+                    <p>Erschaffe epische Pokemon Fangames für die Community</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/TRn34MkT" class="social-link discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Fangame</h4>
+                        <ul>
+                            <li><a href="#fangames">Shadows of Legacy</a></li>
+                            <li><a href="#about">Entwicklung</a></li>
+                            <li><a href="#discord">Beta Updates</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#discord">Discord Server</a></li>
+                            <li><a href="#discord">Beta Program</a></li>
+                            <li><a href="#discord">Entwickler Updates</a></li>
+                            <li><a href="#discord">Fan Art Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#discord">FAQ</a></li>
+                            <li><a href="#discord">Hilfe & Support</a></li>
+                            <li><a href="#discord">Bug Reports</a></li>
+                            <li><a href="#discord">Feature Requests</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mirrorbyte Studio. Alle Rechte vorbehalten.</p>
+                <p class="disclaimer">Pokemon ist ein eingetragenes Warenzeichen von Nintendo/Game Freak. Dies ist ein Fan-Projekt.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
